@@ -1,0 +1,13 @@
+@import 'vars';
+@import 'fonts';
+@import 'optimize';
+@import 'libs';
+@import 'global';
+
+.header {
+	background-color: $beigeBbColor;
+	&__inner {
+	}
+}
+
+@import 'media';
