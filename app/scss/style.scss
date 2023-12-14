@@ -54,11 +54,76 @@
 	}
 }
 
+.about {
+	background-color: $darkBeigeColor;
+	padding: 50px 0;
+	&__content {
+		color: $whiteColor;
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	&__content {
+		min-width: 370px;
+	}
+	&__title {
+		margin-bottom: 15px;
+	}
+	&__text {
+		margin-bottom: 15px;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		padding-left: 110px;
+		padding-bottom: 48px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 22px;
+			height: 30px;
+			background-image: url(../images/about-decor.webp);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: 22px;
+			bottom: 10px;
+			height: 1px;
+			width: 1000%;
+			background-color: $brownColor;
+		}
+	}
+	&__item-img {
+		margin-bottom: 10px;
+	}
+	&__item-img.item-img--1,
+	&__item-img.item-img--3 {
+		width: 215px;
+	}
+	&__item-img.item-img--2 {
+		width: 350px;
+	}
+
+	&__item-text {
+		color: $whiteColor;
+		font-size: 11px;
+	}
+}
+
 .footer {
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 50px 0;
 	}
 	&__contacts {
 		display: flex;
