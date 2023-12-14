@@ -1,5 +1,30 @@
 <!--=include header.html-->
 
-<main class="main"></main>
+<main class="main">
+	<section class="top">
+		<div class="container">
+			<div class="top__inner">
+				<div class="top__content">
+					<h1 class="top__title">Створіть атмосферу затишку та гармонії!</h1>
+					<p class="top__text">
+						Створіть особливу атмосферу у своєму домі з нашою екологічно чистою
+						та якісною продукцією зі 100% натуральної соєвого воску.
+					</p>
+					<button class="top__btn-buy btn-buy">Купити</button>
+				</div>
+				<!-- Pictures: top-s.webp = (0 - 360px); top-m.webp = (361 - 480); top-l.webp = (481 and more) -->
+				<picture class="top__img">
+					<source srcset="images/top-s.webp" media="(max-width: 360px)" />
+					<source srcset="images/top-m.webp" media="(max-width: 480px)" />
+					<img
+						class="top__img-l"
+						src="images/top-l.webp"
+						alt="Сandle collection"
+					/>
+				</picture>
+			</div>
+		</div>
+	</section>
+</main>
 
 <!--=include footer.html-->

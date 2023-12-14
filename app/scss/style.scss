@@ -5,7 +5,6 @@
 @import 'global';
 
 .header {
-	background-color: $beigeBbColor;
 	&__inner {
 		padding-top: 4px;
 		display: flex;
@@ -26,6 +25,32 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+	}
+}
+
+.top {
+	padding: 40px 0 150px;
+	&__inner {
+		position: relative;
+	}
+	&__content {
+		width: 370px;
+		padding: 150px 0 250px;
+	}
+	&__title {
+		font-family: 'Yeseva One', serif;
+		font-size: 30px;
+		line-height: 116%;
+		margin-bottom: 15px;
+	}
+	&__text {
+		line-height: 112%;
+		margin-bottom: 48px;
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 240px;
 	}
 }
 
