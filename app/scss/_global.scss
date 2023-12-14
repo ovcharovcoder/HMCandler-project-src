@@ -1,28 +1,15 @@
 // Global styles */
-
-// Glue footer to the bottom
-html,
-body {
-	height: 100%;
-}
-
-.wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-.main {
-	flex-grow: 1;
-}
-// END/ Glue footer to the bottom
-
 body {
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 0.875rem; // 14px
 	font-weight: 400;
 	color: $defaultColor;
 	line-height: 120%;
+	background-color: $beigeBbColor;
+}
+
+.main {
+	overflow-x: clip;
 }
 
 .container {
@@ -52,6 +39,22 @@ body {
 	border-radius: 0;
 }
 
+button {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+	background-color: $yellowColor;
+	padding: 18px 54px;
+}
+
+.title {
+	font-family: 'Yeseva One', serif;
+	font-size: 40px;
+	line-height: 115%;
+	font-weight: 400;
+}
+
 // font-family: 'Comfortaa', sans-serif;
 // font-family: 'Roboto', sans-serif;
-// font-family: 'Yeseva One', serif;
+//
