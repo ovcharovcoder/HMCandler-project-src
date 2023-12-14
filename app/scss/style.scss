@@ -7,6 +7,45 @@
 .header {
 	background-color: $beigeBbColor;
 	&__inner {
+		padding-top: 4px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__phone {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: '';
+			top: 50%;
+			transform: translateY(-50%);
+			left: -23px;
+			width: 18px;
+			height: 18px;
+			background-image: url(../images/icons/phone.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+.footer {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		width: 230px;
+	}
+	&__email {
+		margin: 17px 0;
+	}
+	&__social-list {
+		display: flex;
+		gap: 15px;
 	}
 }
 

@@ -18,14 +18,38 @@ body {
 // END/ Glue footer to the bottom
 
 body {
-	font-size: 1rem; // 16px
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 0.875rem; // 14px
+	font-weight: 400;
 	color: $defaultColor;
+	line-height: 120%;
 }
 
 .container {
 	max-width: 1180px;
 	margin: 0 auto;
 	padding: 0 0.625rem; // 0 10px
+}
+
+.menu__list {
+	display: flex;
+	gap: 20px;
+}
+
+.menu__list-link {
+	text-transform: uppercase;
+}
+
+.header__menu-btn {
+	display: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 25px;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
 }
 
 // font-family: 'Comfortaa', sans-serif;
