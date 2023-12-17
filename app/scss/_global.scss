@@ -18,6 +18,10 @@ body {
 	padding: 0 0.625rem; // 0 10px
 }
 
+.section {
+	padding-bottom: 150px;
+}
+
 .menu__list {
 	display: flex;
 	gap: 20px;
@@ -39,20 +43,55 @@ body {
 	border-radius: 0;
 }
 
-button {
+.btn-buy {
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 	border: none;
 	background-color: $yellowColor;
-	padding: 18px 54px;
+	padding: 20px 45px;
 }
 
 .title {
 	font-family: 'Yeseva One', serif;
 	font-size: 40px;
 	line-height: 115%;
-	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.section__inner {
+	display: grid;
+	grid-template-columns: 370px auto;
+}
+
+.section__content-descr {
+	display: grid;
+	grid-template-columns: auto auto;
+	padding-bottom: 92px;
+}
+
+.section--decor {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 22px;
+		height: 30px;
+		background-image: url(../images/section-decor.webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		left: 22px;
+		bottom: 10px;
+		height: 1px;
+		width: 1000%;
+		background-color: $brownColor;
+	}
 }
 
 // font-family: 'Comfortaa', sans-serif;
