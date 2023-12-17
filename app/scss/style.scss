@@ -129,6 +129,83 @@
 	}
 }
 
+// Section Steps
+.steps {
+	&__list {
+		gap: 70px 25px;
+		counter-reset: number;
+	}
+	&__item {
+		display: flex;
+		gap: 40px;
+		position: relative;
+	}
+	&__item::before {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		counter-increment: number;
+		content: '0' counter(number);
+		font-family: 'Yeseva One', serif;
+		font-size: 30px;
+		font-weight: 400;
+		color: $beigeColor;
+	}
+
+	&__item:nth-child(n + 10):before {
+		content: counter(number);
+	}
+	&__item.steps__item--even::before {
+		left: auto;
+		right: 0;
+	}
+	&__item-text {
+		flex-basis: 174px;
+		padding-bottom: 40px;
+	}
+	&__item-img {
+		width: 160px;
+		object-fit: cover;
+	}
+}
+
+// Courses
+.courses {
+	&__imgbox {
+		position: relative;
+		color: $whiteColor;
+		font-size: 11px;
+		font-family: 'Yeseva One', serif;
+	}
+	&__imgbox-title,
+	&__imgbox-time,
+	&__imgbox-price {
+		position: absolute;
+		background-color: $beigeColor;
+	}
+	&__imgbox-title {
+		padding: 15px;
+		top: 45%;
+		left: 10px;
+	}
+	&__imgbox-time {
+		padding: 7px 10px;
+		top: 60%;
+		left: 10px;
+	}
+	&__imgbox-price {
+		padding: 19px 10px;
+		bottom: 0;
+		right: 0;
+	}
+	&__imgbox-img {
+		margin-bottom: 0;
+	}
+	&__item-title {
+		padding-top: 20px;
+	}
+}
+
 // Footer
 .footer {
 	&__inner {
