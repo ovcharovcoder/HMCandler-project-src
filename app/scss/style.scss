@@ -3,7 +3,7 @@
 @import 'optimize';
 @import 'libs';
 @import 'global';
-
+// header
 .header {
 	&__inner {
 		padding-top: 4px;
@@ -28,6 +28,7 @@
 	}
 }
 
+// Section Top
 .top {
 	padding: 40px 0 150px;
 	&__inner {
@@ -41,7 +42,6 @@
 		font-family: 'Yeseva One', serif;
 		font-size: 30px;
 		line-height: 116%;
-		margin-bottom: 15px;
 	}
 	&__text {
 		line-height: 112%;
@@ -54,9 +54,11 @@
 	}
 }
 
+// Section About
 .about {
 	background-color: $darkBeigeColor;
 	padding: 50px 0;
+	margin-bottom: 150px;
 	&__content {
 		color: $whiteColor;
 	}
@@ -73,34 +75,6 @@
 	&__text {
 		margin-bottom: 15px;
 	}
-	&__list {
-		display: flex;
-		align-items: center;
-		gap: 20px;
-		padding-left: 110px;
-		padding-bottom: 48px;
-		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 22px;
-			height: 30px;
-			background-image: url(../images/about-decor.webp);
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-		&::after {
-			content: '';
-			position: absolute;
-			left: 22px;
-			bottom: 10px;
-			height: 1px;
-			width: 1000%;
-			background-color: $brownColor;
-		}
-	}
 	&__item-img {
 		margin-bottom: 10px;
 	}
@@ -111,13 +85,51 @@
 	&__item-img.item-img--2 {
 		width: 350px;
 	}
-
 	&__item-text {
 		color: $whiteColor;
 		font-size: 11px;
 	}
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		padding-left: 110px;
+		padding-bottom: 48px;
+	}
 }
 
+// Section Products
+.products {
+	&__content {
+		gap: 50px 5px;
+	}
+	&__item {
+		width: 290px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__item-img {
+		margin-bottom: 8px;
+	}
+	&__item-price,
+	&__item-title {
+		font-family: 'Yeseva One', serif;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	&__item-price {
+		margin-bottom: 12px;
+	}
+	&__item-title {
+		margin-bottom: 16px;
+	}
+	&__item-text {
+		font-size: 12px;
+		margin-bottom: 27px;
+	}
+}
+
+// Footer
 .footer {
 	&__inner {
 		display: flex;
