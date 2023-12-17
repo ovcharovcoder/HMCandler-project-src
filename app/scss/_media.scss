@@ -103,6 +103,12 @@
 	}
 }
 
+@media (max-width: 820px) {
+	.products__content {
+		gap: 30px 10px;
+	}
+}
+
 @media (max-width: 768px) {
 	body {
 		font-size: 10px;
@@ -197,6 +203,22 @@
 			font-size: 8px;
 		}
 	}
+	.courses {
+		&__item-text {
+			font-size: 10px;
+		}
+		&__imgbox-title,
+		&__imgbox-time {
+			left: 0;
+			font-size: 10px;
+		}
+		&__imgbox-time {
+			top: 64%;
+		}
+		&__imgbox-price {
+			font-size: 10px;
+		}
+	}
 }
 
 @media (max-width: 640px) {
@@ -256,6 +278,33 @@
 		&__menu {
 			padding: 50px 0 35px;
 			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.courses {
+		&__content {
+			display: block;
+		}
+		&__imgbox-img.products__item-img {
+			width: 100%;
+			margin: 0 auto;
+		}
+		&__item.products__item {
+			padding-bottom: 30px;
+			width: 290px;
+		}
+		&__item-title.products__item-title,
+		&__item-btn.products__item-btn {
+			font-size: 12px;
+		}
+		&__imgbox-time {
+			top: 60%;
+		}
+		.courses__imgbox-price {
+			bottom: -8px;
+			right: -8px;
 		}
 	}
 }
