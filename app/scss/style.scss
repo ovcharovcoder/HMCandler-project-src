@@ -242,6 +242,80 @@
 		font-size: 10px;
 	}
 }
+// Feedback
+.feedback {
+	&__descr {
+		margin-right: 15px;
+	}
+	&__item {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 0 16px;
+		align-items: center;
+	}
+	&__item-sociallink {
+		margin-bottom: 12px;
+	}
+	&__item-name {
+		font-family: 'Yeseva One', serif;
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+	&__item-text {
+		margin-bottom: 15px;
+	}
+	&__content {
+		padding-bottom: 110px;
+	}
+	&__item-content {
+		padding-bottom: 70px;
+	}
+	&__item-btn {
+		position: absolute;
+		bottom: 10px;
+		right: 0;
+	}
+	&__slider {
+		width: 760px;
+		overflow: hidden;
+	}
+}
+
+.certificates {
+	&__slider {
+		width: 1135px;
+		overflow: hidden;
+	}
+	&__descr {
+		margin-right: 20px;
+	}
+	&__content {
+		padding-bottom: 114px;
+	}
+	&__slide-img {
+		max-width: 375px;
+	}
+}
+
+.feedback__content .swiper-pagination {
+	bottom: 50px;
+}
+.certificates__content .swiper-pagination {
+	bottom: 60px;
+	text-align: left;
+}
+
+.swiper-pagination-bullet {
+	background-color: $beigeColor;
+	height: 4px;
+	width: 53px;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: $brownColor;
+}
 
 // Footer
 .footer {

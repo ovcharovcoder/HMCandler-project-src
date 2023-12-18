@@ -20,8 +20,8 @@ function pages() {
     include({
       includePaths: "app/components"
     }))
-  .pipe(dest("app"))
-  .pipe(browserSync.stream())
+    .pipe(dest("app"))
+    .pipe(browserSync.stream())
 }
 
 // Fonts
@@ -61,7 +61,7 @@ function images() {
 // Scripts
 function scripts() {
   return src([
-    // "node_modules/swiper/swiper-bundle.js",
+    "node_modules/swiper/swiper-bundle.min.js",
     "app/js/main.js",
   ])
     .pipe(concat("main.min.js"))
