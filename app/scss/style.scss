@@ -206,6 +206,43 @@
 	}
 }
 
+// Team
+.team {
+	background-color: $darkBeigeColor;
+	padding: 60px 0 80px;
+	margin-bottom: 150px;
+	&__inner {
+		color: $whiteColor;
+	}
+	&__content {
+		padding-bottom: 0;
+		gap: 75px;
+	}
+	&__item {
+		position: relative;
+	}
+	&__img {
+		width: 218px;
+	}
+	&__item-box {
+		position: absolute;
+		bottom: 13px;
+		right: 36px;
+		background-color: $brownColor;
+		text-align: center;
+		padding: 15px 10px 16px;
+		width: 165px;
+		z-index: 5;
+	}
+	&__item-name {
+		font-family: 'Yeseva One', serif;
+		font-size: 12px;
+	}
+	&__item-descr {
+		font-size: 10px;
+	}
+}
+
 // Footer
 .footer {
 	&__inner {
