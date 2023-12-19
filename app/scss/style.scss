@@ -3,10 +3,11 @@
 @import 'optimize';
 @import 'libs';
 @import 'global';
+
 // header
 .header {
 	&__inner {
-		padding-top: 4px;
+		padding-top: 0.25rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -30,35 +31,36 @@
 
 // Section Top
 .top {
-	padding: 40px 0 150px;
+	padding: 2.5rem 0 9.375rem;
 	&__inner {
 		position: relative;
 	}
 	&__content {
 		width: 370px;
-		padding: 150px 0 250px;
+		padding: 9.375rem 0 15.625rem;
 	}
 	&__title {
 		font-family: 'Yeseva One', serif;
-		font-size: 30px;
+		font-size: 1.875rem;
 		line-height: 116%;
+		margin-bottom: 0.9375rem;
 	}
 	&__text {
 		line-height: 112%;
-		margin-bottom: 48px;
+		margin-bottom: 3rem;
 	}
 	&__img {
 		position: absolute;
 		top: 0;
-		left: 240px;
+		left: 15rem;
 	}
 }
 
 // Section About
 .about {
 	background-color: $darkBeigeColor;
-	padding: 50px 0;
-	margin-bottom: 150px;
+	padding: 3.125rem 0;
+	margin-bottom: 9.375rem;
 	&__content {
 		color: $whiteColor;
 	}
@@ -70,13 +72,13 @@
 		min-width: 370px;
 	}
 	&__title {
-		margin-bottom: 15px;
+		margin-bottom: 0.9375rem;
 	}
 	&__text {
-		margin-bottom: 15px;
+		margin-bottom: 0.9375rem;
 	}
 	&__item-img {
-		margin-bottom: 10px;
+		margin-bottom: 0.625rem;
 	}
 	&__item-img.item-img--1,
 	&__item-img.item-img--3 {
@@ -87,21 +89,21 @@
 	}
 	&__item-text {
 		color: $whiteColor;
-		font-size: 11px;
+		font-size: 0.6875rem;
 	}
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: 20px;
-		padding-left: 110px;
-		padding-bottom: 48px;
+		gap: 1.25rem;
+		padding-left: 6.875rem;
+		padding-bottom: 3rem;
 	}
 }
 
 // Section Products
 .products {
 	&__content {
-		gap: 50px 5px;
+		gap: 3.125rem 0.3125rem;
 	}
 	&__item {
 		width: 290px;
@@ -109,35 +111,35 @@
 		margin: 0 auto;
 	}
 	&__item-img {
-		margin-bottom: 8px;
+		margin-bottom: 0.5rem;
 	}
 	&__item-price,
 	&__item-title {
 		font-family: 'Yeseva One', serif;
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: 400;
 	}
 	&__item-price {
-		margin-bottom: 12px;
+		margin-bottom: 0.75rem;
 	}
 	&__item-title {
-		margin-bottom: 16px;
+		margin-bottom: 1rem;
 	}
 	&__item-text {
-		font-size: 12px;
-		margin-bottom: 27px;
+		font-size: 0.75rem;
+		margin-bottom: 1.6875rem;
 	}
 }
 
 // Section Steps
 .steps {
 	&__list {
-		gap: 70px 25px;
+		gap: 4.375rem 1.5625rem;
 		counter-reset: number;
 	}
 	&__item {
 		display: flex;
-		gap: 40px;
+		gap: 2.5rem;
 		position: relative;
 	}
 	&__item::before {
@@ -147,7 +149,7 @@
 		counter-increment: number;
 		content: '0' counter(number);
 		font-family: 'Yeseva One', serif;
-		font-size: 30px;
+		font-size: 1.875rem;
 		font-weight: 400;
 		color: $beigeColor;
 	}
@@ -161,7 +163,7 @@
 	}
 	&__item-text {
 		flex-basis: 174px;
-		padding-bottom: 40px;
+		padding-bottom: 2.5rem;
 	}
 	&__item-img {
 		width: 160px;
@@ -169,12 +171,12 @@
 	}
 }
 
-// Courses
+// Section Courses
 .courses {
 	&__imgbox {
 		position: relative;
 		color: $whiteColor;
-		font-size: 11px;
+		font-size: 0.6875rem;
 		font-family: 'Yeseva One', serif;
 	}
 	&__imgbox-title,
@@ -184,17 +186,17 @@
 		background-color: $beigeColor;
 	}
 	&__imgbox-title {
-		padding: 15px;
+		padding: 0.9375rem;
 		top: 45%;
-		left: 10px;
+		left: 0.625rem;
 	}
 	&__imgbox-time {
-		padding: 7px 10px;
+		padding: 0.4375rem 0.625rem;
 		top: 60%;
-		left: 10px;
+		left: 0.625rem;
 	}
 	&__imgbox-price {
-		padding: 19px 10px;
+		padding: 1.1875rem 0.625rem;
 		bottom: 0;
 		right: 0;
 	}
@@ -202,21 +204,21 @@
 		margin-bottom: 0;
 	}
 	&__item-title {
-		padding-top: 20px;
+		padding-top: 1.25rem;
 	}
 }
 
-// Team
+// Section Team
 .team {
 	background-color: $darkBeigeColor;
-	padding: 60px 0 80px;
-	margin-bottom: 150px;
+	padding: 3.75rem 0 5rem;
+	margin-bottom: 9.375rem;
 	&__inner {
 		color: $whiteColor;
 	}
 	&__content {
 		padding-bottom: 0;
-		gap: 75px;
+		gap: 4.6875rem;
 	}
 	&__item {
 		position: relative;
@@ -226,53 +228,53 @@
 	}
 	&__item-box {
 		position: absolute;
-		bottom: 13px;
+		bottom: 0.8125rem;
 		right: 36px;
 		background-color: $brownColor;
 		text-align: center;
-		padding: 15px 10px 16px;
+		padding: 0.9375rem 0.625rem 1rem;
 		width: 165px;
 		z-index: 5;
 	}
 	&__item-name {
 		font-family: 'Yeseva One', serif;
-		font-size: 12px;
+		font-size: 0.75rem;
 	}
 	&__item-descr {
-		font-size: 10px;
+		font-size: 0.625rem;
 	}
 }
-// Feedback
+// Section Feedback
 .feedback {
 	&__descr {
-		margin-right: 15px;
+		margin-right: 0.9375rem;
 	}
 	&__item {
 		display: grid;
 		grid-template-columns: auto auto;
-		gap: 0 16px;
+		gap: 0 1rem;
 		align-items: center;
 	}
 	&__item-sociallink {
-		margin-bottom: 12px;
+		margin-bottom: 0.75rem;
 	}
 	&__item-name {
 		font-family: 'Yeseva One', serif;
-		margin-bottom: 15px;
-		font-size: 16px;
+		margin-bottom: 0.9375rem;
+		font-size: 1rem;
 	}
 	&__item-text {
-		margin-bottom: 15px;
+		margin-bottom: 0.9375rem;
 	}
 	&__content {
-		padding-bottom: 110px;
+		padding-bottom: 6.875rem;
 	}
 	&__item-content {
-		padding-bottom: 70px;
+		padding-bottom: 4.375rem;
 	}
 	&__item-btn {
 		position: absolute;
-		bottom: 10px;
+		bottom: 0.625rem;
 		right: 0;
 	}
 	&__slider {
@@ -281,16 +283,17 @@
 	}
 }
 
+// Section Certificates
 .certificates {
 	&__slider {
 		width: 1135px;
 		overflow: hidden;
 	}
 	&__descr {
-		margin-right: 20px;
+		margin-right: 1.25rem;
 	}
 	&__content {
-		padding-bottom: 114px;
+		padding-bottom: 7.125rem;
 	}
 	&__slide-img {
 		max-width: 375px;
@@ -298,16 +301,16 @@
 }
 
 .feedback__content .swiper-pagination {
-	bottom: 50px;
+	bottom: 3.125rem;
 }
 .certificates__content .swiper-pagination {
-	bottom: 60px;
+	bottom: 3.75rem;
 	text-align: left;
 }
 
 .swiper-pagination-bullet {
 	background-color: $beigeColor;
-	height: 4px;
+	height: 0.25rem;
 	width: 53px;
 	border-radius: 0;
 	opacity: 1;
@@ -317,13 +320,141 @@
 	background-color: $brownColor;
 }
 
-// Footer
-.footer {
+.promo {
+	background-image: url(../images/promo-bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 8.75rem 0;
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 990px;
+		margin: 0 3.5rem;
+	}
+	&__item-text {
+		font-family: 'Yeseva One', serif;
+		font-size: 2.5rem;
+		color: $whiteColor;
+		line-height: 1.15;
+		padding: 0 0.625rem;
+	}
+	&__item-link {
+		display: inline-block;
+		padding: 0.875rem 1.5625rem 0.75rem;
+	}
+}
+
+// Section Contacts
+.contacts {
+	padding: 9.375rem 0 3.125rem;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 50px 0;
+	}
+	&__form {
+		background-color: $whiteColor;
+		box-shadow: 0px 4px 11px 0px rgba(199, 175, 165, 0.3);
+		max-width: 664px;
+		padding: 4.6875rem 2.625rem 4.1875rem;
+	}
+	&__title {
+		font-family: 'Yeseva One', serif;
+		font-size: 2.5rem;
+		margin-bottom: 2.8125rem;
+	}
+	&__form-input {
+		color: $defaultColor;
+		background-color: $whiteColor;
+		border: none;
+		border-bottom: 1px solid $defaultColor;
+		width: 100%;
+		display: block;
+		margin-bottom: 0.9375rem;
+		padding: 0.625rem 0.4375rem;
+	}
+	&__form-input::placeholder {
+		color: $greyColor;
+		font-family: 'Comfortaa', sans-serif;
+		font-size: 0.875rem;
+	}
+	&__form-btn {
+		padding: 1.0625rem 2.125rem;
+		font-weight: 600;
+		margin-top: 2.25rem;
+	}
+	&__img-box {
+		padding: 0 1.25rem 1.25rem;
+	}
+	&__img {
+		width: 448px;
+	}
+}
+
+// Section Accordeon
+.accordeon {
+	&__item {
+		background-color: $whiteColor;
+		margin-bottom: 0.625rem;
+		box-shadow: 0px 4px 11px 0px rgba(196, 174, 151, 0.2);
+	}
+	&__question {
+		font-family: 'Yeseva One', serif;
+		font-size: 1rem;
+		border: none;
+		background-color: transparent;
+		display: block;
+		width: 100%;
+		padding: 1rem 3.125rem 1rem 0.8125rem;
+		text-align: left;
+		position: relative;
+		line-height: 1.15;
+	}
+	&__question::after {
+		position: absolute;
+		content: '';
+		background-image: url(../images/icons/arrrow.svg);
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+		right: 1.625rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__answer {
+		opacity: 0;
+		max-height: 0;
+		transition: opacity 0.3s, max-height 0.3s;
+	}
+	&__question.accordeon__question--active::after {
+		transform: rotate(180deg);
+	}
+
+	&__answer.accordeon__answer--visible {
+		opacity: 1;
+	}
+	&__list {
+		padding: 1.25rem 1.875rem;
+	}
+	&__list-item,
+	&__list-text {
+		padding-bottom: 0.625rem;
+	}
+
+	&__text {
+		padding: 1.25rem 0.625rem;
+	}
+}
+
+// Section Footer
+.footer {
+	background-color: #fff;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3.125rem 0;
 	}
 	&__contacts {
 		display: flex;
@@ -331,12 +462,11 @@
 		width: 230px;
 	}
 	&__email {
-		margin: 17px 0;
+		margin: 1.0625rem 0;
 	}
 	&__social-list {
 		display: flex;
-		gap: 15px;
+		gap: 0.9375rem;
 	}
 }
-
 @import 'media';

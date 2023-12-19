@@ -30,8 +30,29 @@ const swiperTwo = new Swiper('.certificates__slider', {
 		480: {
 			slidesPerView: 2,
 		},
-		481: {
+		640: {
 			slidesPerView: 3,
 		},
 	},
 });
+
+// Accordeon list for section Questions
+const accordeon = document.querySelector('.accordeon');
+const accordeonQuestions = accordeon.querySelectorAll('.accordeon__question');
+
+accordeonQuestions.forEach.call(accordeonQuestions, function (accordeonQuestion) {
+	accordeonQuestion.addEventListener('click', function () {
+
+		const currentText = accordeonQuestion.parentElement.querySelector('.accordeon__answer');
+
+		accordeonQuestion.classList.toggle('accordeon__question--active');
+		currentText.classList.toggle('accordeon__answer--visible');
+
+		if (currentText.classList.contains('accordeon__answer--visible')) {
+			currentText.style.maxHeight = currentText.scrollHeight + 'px'
+		} else {
+			currentText.style.maxHeight = null
+		}
+	});
+});
+
