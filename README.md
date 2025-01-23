@@ -2,7 +2,7 @@
 <h2>Project Description</h2>
 <p>This project was built using the Gulp task runner, which optimized the development process and increased productivity. The project follows a modular structure, ensuring easy scalability and maintainability. The website is optimized for performance and fully adapted for mobile devices, providing a seamless user experience across various screen sizes.</p>
 
-<h3>Technologies Used: html, scss, JavaScript</h3>
+<h3>Technologies Used: HTML, SCSS, BEM, JavaScript</h3>
 
 Development Date: [specify date]
 
