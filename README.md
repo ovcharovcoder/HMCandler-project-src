@@ -1,4 +1,10 @@
 # HMCandler-front-project-src
+<h2>Project Description</h2>
+<p>This project was built using the Gulp task runner, which optimized the development process and increased productivity. The project follows a modular structure, ensuring easy scalability and maintainability. The website is optimized for performance and fully adapted for mobile devices, providing a seamless user experience across various screen sizes.</p>
+
+<h5>Technologies Used: html, scss, JavaScript</h5>
+
+Development Date: [specify date]
 
 <p>The repository contains site source files generated using Gulp.</p>
 <p>Website development based on a layout to improve my web development skills.</p>
