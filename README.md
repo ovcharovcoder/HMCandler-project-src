@@ -1,4 +1,4 @@
-# HMCandler-front-project-src
+<h1>Open Source for HM Candler Project</h1>
 <h2>Project Description</h2>
 <b>Development Date: 19.12.2023</b>
 <h3>Brief description:</h3>
